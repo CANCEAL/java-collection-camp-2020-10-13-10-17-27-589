@@ -18,7 +18,8 @@ public class Reduce {
     }
 
     public int getMaxValue() {
-        throw new NotImplementedException();
+        return arrayList.stream().
+                reduce(0, Integer::max);
     }
 
     public int getLastOdd() {
