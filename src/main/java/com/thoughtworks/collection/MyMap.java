@@ -31,6 +31,8 @@ public class MyMap {
     }
 
     public List<Integer> sortFromBig() {
-        throw new NotImplementedException();
+        return array.stream()
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
     }
 }
